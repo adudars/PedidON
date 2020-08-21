@@ -4,15 +4,11 @@ Trabalho desenvolvido durante a disciplina de BD1
 # Sumário
 
 ### 1. COMPONENTES<br>
-Integrantes do grupo<br>
 Eduarda Simões: eduardarsimoes@gmail.com<br>
 Gabrielle Azevedo Duda: email_segundo_componente@dominio.com<br>
 Thiago Freitas: email_terceiro_componente@dominio.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados PedidON 
-<br>e motivação da escolha realizada. <br>
-
 > A empresa "TAG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos, Tamanhos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
  
 
