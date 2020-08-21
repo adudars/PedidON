@@ -6,10 +6,10 @@ Trabalho desenvolvido durante a disciplina de BD1
 ### 1. COMPONENTES<br>
 Eduarda Simões: eduardarsimoes@gmail.com<br>
 Gabrielle Azevedo Duda: gabiabacduda@gmail.com<br>
-Thiago Freitas:thiagocfreitas2@gmail.com<br>
+Thiago Freitas: thiagocfreitas2@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos, Tamanhos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
+A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
  
 
 ### 3.MINI-MUNDO<br>
@@ -24,12 +24,9 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do cliente](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Cliente.pdf?raw=true "empresa 'TEG'")<br>
+![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do funcionário](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Funcionario.pdf?raw=true "empresa 'TEG'")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
 O restaurante em questão precisa inicialmente dos seguintes relatórios:
