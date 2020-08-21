@@ -1,15 +1,15 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  PedidON
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Eduarda Simões: eduardarsimoes@gmail.com<br>
-Gabrielle Azevedo Duda: email_segundo_componente@dominio.com<br>
-Thiago Freitas: email_terceiro_componente@dominio.com<br>
+Gabrielle Azevedo Duda: gabiabacduda@gmail.com<br>
+Thiago Freitas:thiagocfreitas2@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-> A empresa "TAG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos, Tamanhos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
+A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos, Tamanhos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
  
 
 ### 3.MINI-MUNDO<br>
@@ -31,17 +31,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
 
+O restaurante em questão precisa inicialmente dos seguintes relatórios:
+* Relatório Funcionário destaque: mostrar o nome e a quantidade de comandas atendidas no mês pelo funcionário que mais realizou atendimentos no mês.
+* Relatório Cardápio Top 3: mostrar o nome, descrição e valor dos itens mais pedidos do cardápio. Os resultados devem ser apresentados ordenados de forma decrescente.
+* Relatório Faturamento: mostrar o valor total faturado mensalmente.
+* Relatório Clientes por dia: mostrar os nomes e valor total gasto de cada cliente. Os resultados devem estar ordenados de forma ascendente.
+* Relatório Feedback: mostrar todos os itens pedidos e as descrição de observação do mesmo.
  
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
