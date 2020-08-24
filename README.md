@@ -8,12 +8,12 @@ Eduarda Simões: eduardarsimoes@gmail.com<br>
 Gabrielle Azevedo Duda: gabiabacduda@gmail.com<br>
 Thiago Freitas: thiagocfreitas2@gmail.com<br>
 
+
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápios e Comandas, além de também armazenar dados sobre Observações dos pedidos e Tamanhos dos itens. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
+A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a automação da realização de pedidos dentro de um restaurante local. Sabendo-se dos desafios para gerenciar projetos dentro de um estabelecimento e visando unir as informações relativas a funcionários, pedidos, itens de cardapio e clientes em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "PedidON" tem como objetivo gerenciar algumas informações referentes ao atendimento gastrônomico afim de facilitar e principalmente, pela atual pandemia, mitigar o contato entre funcionários e clientes devido ao contágio fácil do COVID-19. Portanto, para realizar essas operações adequadamente o restaurante necessita que sistema que armazene informações relativas aos Clientes, Funcionários, Pedidos, Cardápio e Comandas, além de também armazenar dados sobre Observações dos pedidos e Tamanhos dos itens. Ademais a isso, o sistema também será responsável por gerar um conjunto de relatórios que por sua vez atenderá as necessidades e desejos do restaurante em questão.
  
 
 ### 3.MINI-MUNDO<br>
-
 Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
 Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
 Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
@@ -24,18 +24,16 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-
 ![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do cliente](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Cliente.pdf?raw=true "empresa 'TEG'")<br>
 ![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do funcionário](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Funcionario.pdf?raw=true "empresa 'TEG'")
-#### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
+#### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 O restaurante em questão precisa inicialmente dos seguintes relatórios:
-* Relatório Funcionário destaque: mostrar o nome e a quantidade de comandas atendidas no mês pelo funcionário que mais realizou atendimentos no mês.
-* Relatório Cardápio Top 3: mostrar o nome, descrição e valor dos itens mais pedidos do cardápio. Os resultados devem ser apresentados ordenados de forma decrescente.
-* Relatório Faturamento: mostrar o valor total faturado mensalmente.
-* Relatório Clientes por dia: mostrar os nomes e valor total gasto de cada cliente. Os resultados devem estar ordenados de forma ascendente.
-* Relatório Feedback: mostrar todos os itens pedidos e as descrição de observação do mesmo.
- 
+* Relatório Funcionário destaque: mostrar o nome e a quantidade de comandas atendidas pelo funcionário que mais realizou atendimentos no mês.
+* Relatório Frequência de clientes: mostrar o nome e a frequência do cliente no mês. Os resultados devem ser apresentados ordenados pelo valor referente a frequência de forma decrescente.
+* Relatório Cardápio Top 3: mostrar o nome e valor dos itens de cardápio mais pedidos no mês. Os resultados devem ser apresentados ordenados pelo valor do item de cardápio de forma decrescente e limitado com apenas 3 linhas de consulta.
+* Relatório Faturamento mensal: mostrar o valor total faturado no mês.
+* Relatório Gasto por clientes: mostrar os nomes e o valor total gasto de cada cliente no mês. Os resultados devem estar ordenados pelo valor total gasto de forma decrescente.
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
@@ -57,24 +55,46 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
     
     
-        
-    
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+CLIENTE: Tabela que armazena as informações relativas aos clientes <br>
+   IDENTIFICAÇÃO CLIENTE: campo que armazena o número de identificação para cada cliente do restaurante <br>
+   NOME: campo que armazena o nome para cada cliente do restaurante<br>
+FUNCIONÁRIO: Tabela que armazena as informações relativas aos funcionários<br>
+   IDENTIFICAÇÃO FUNCIONÁRIO: campo que armazena o número de identificação para cada funcionário do restaurante <br>
+   MATRÍCULA: campo que armazena o número de matrícula para cada funcionário do restaurante <br>
+   NOME: campo que armazena o nome para cada funcionário do restaurante <br>
+CARDÁPIO: Tabela que armazena as informações relativas aos itens do cardápio <br>
+   IDENTIFICAÇÃO CARDÁPIO: campo que armazena o número de identificação para cada item do cardápio do restaurante  <br>
+   NOME: campo que armazena o nome para cada item do cardápio do restaurante  <br>
+   DESCRIÇÃO: campo que armazena a descrição para cada item de cardápio do restaurante <br>
+   PREÇO: campo que armazena o número do valor cobrado para cada item do cardápio do restaurante <br>
+OBS_PEDIDO: Tabela que armazena as informações relativas às observações dos pedidos <br>
+   IDENTIFICAÇÃO OBS_PEDIDO: campo que armazena o número de identificação para cada observação de pedido do restaurante  <br>
+   DESCRIÇÃO: campo que armazena a descrição para cada observação de pedido do restaurante <br>
+TAMANHO: Tabela que armazena as informações relativas aos possíveis tamanhos dos itens de cardápio <br>
+   IDENTIFICAÇÃO TAMANHO: campo que armazena o número de identificação para cada tamanho de item do cardápio possível do restaurante  <br>
+   DESCRIÇÃO: campo que armazena a descrição para cada tipo de tamanho de item do cardápio do restaurante <br>
+PEDIDO: Tabela que armazena as informações relativas aos pedidos <br>
+   IDENTIFICAÇÃO PEDIDO: campo que armazena o número de identificação para cada pedido do restaurante  <br>
+   QUANTIDADE: campo que armazena o número de quantidade para cada pedido do restaurante <br>
+   HORA: campo que armazena a hora para cada pedido do restaurante <br>
+TAMANHO_ITEM: Tabela que armazena as informações relativas aos tamanhos respectivos de cada item de cardápio <br>
+   IDENTIFICAÇÃO TAMANHO ITEM: campo que armazena o número de identificação para cada tamanho de específico item de cardápio do restaurante  <br>
+COMANDA: Tabela que armazena as informações relativas às comandas
+   IDENTIFICAÇÃO COMANDA: campo que armazena o número de identificação para cada comanda do restaurante  <br>
+   DATA: campo que armazena a data de cada comanda do restaurante <br>
+   NÚMERO DA MESA: campo que armazena o número da mesa para cada comanda do restaurante <br>
 
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
+
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
