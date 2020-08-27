@@ -63,20 +63,21 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
 **CLIENTE**: Tabela que armazena as informações relativas aos clientes <br>
 IDENTIFICAÇÃO CLIENTE: campo que armazena o número de identificação para cada cliente do restaurante <br>
 NOME: campo que armazena o nome para cada cliente do restaurante <br>
+CPF: campo que armazena o CPF para cada cliente do restaurante <br>
 
 **FUNCIONÁRIO**: Tabela que armazena as informações relativas aos funcionários<br>
 IDENTIFICAÇÃO FUNCIONÁRIO: campo que armazena o número de identificação para cada funcionário do restaurante <br>
 MATRÍCULA: campo que armazena o número de matrícula para cada funcionário do restaurante <br>
 NOME: campo que armazena o nome para cada funcionário do restaurante <br>
 
-**CARDÁPIO**: Tabela que armazena as informações relativas aos itens do cardápio <br>
-IDENTIFICAÇÃO CARDÁPIO: campo que armazena o número de identificação para cada item do cardápio do restaurante  <br>
+**ITEM_CARDÁPIO**: Tabela que armazena as informações relativas aos itens do cardápio <br>
+IDENTIFICAÇÃO ITEM CARDÁPIO: campo que armazena o número de identificação para cada item do cardápio do restaurante  <br>
 NOME: campo que armazena o nome para cada item do cardápio do restaurante  <br>
 DESCRIÇÃO: campo que armazena a descrição para cada item de cardápio do restaurante <br>
 PREÇO: campo que armazena o número do valor cobrado para cada item do cardápio do restaurante <br>
 
-**OBS_PEDIDO**: Tabela que armazena as informações relativas às observações dos pedidos <br>
-IDENTIFICAÇÃO OBS_PEDIDO: campo que armazena o número de identificação para cada observação de pedido do restaurante  <br>
+**OBSERVAÇÃO**: Tabela que armazena as informações relativas às observações dos pedidos <br>
+IDENTIFICAÇÃO OBS: campo que armazena o número de identificação para cada observação de pedido do restaurante  <br>
 DESCRIÇÃO: campo que armazena a descrição para cada observação de pedido do restaurante <br>
 
 **TAMANHO**: Tabela que armazena as informações relativas aos possíveis tamanhos dos itens de cardápio <br>
@@ -88,13 +89,14 @@ IDENTIFICAÇÃO PEDIDO: campo que armazena o número de identificação para cad
 QUANTIDADE: campo que armazena o número de quantidade para cada pedido do restaurante <br>
 HORA: campo que armazena a hora para cada pedido do restaurante <br>
 
-**TAMANHO_ITEM**: Tabela que armazena as informações relativas aos tamanhos respectivos de cada item de cardápio <br>
-IDENTIFICAÇÃO TAMANHO ITEM: campo que armazena o número de identificação para cada tamanho de específico item de cardápio do restaurante<br>
-
 **COMANDA**: Tabela que armazena as informações relativas às comandas<br>
 IDENTIFICAÇÃO COMANDA: campo que armazena o número de identificação para cada comanda do restaurante  <br>
 DATA: campo que armazena a data de cada comanda do restaurante <br>
 NÚMERO DA MESA: campo que armazena o número da mesa para cada comanda do restaurante <br>
+
+**CATEGORIA**: Tabela que armazena as informações relativas às categorias dos itens de cardápio<br>
+IDENTIFICAÇÃO CATEGORIA: campo que armazena o número de identificação para cada categoria do item de cardápio do restaurante  <br>
+DESCRIÇÃO: campo que armazena a descrição de cada categoria do item de cardápio do restaurante <br>
 
 
 ### 6	MODELO LÓGICO<br>
