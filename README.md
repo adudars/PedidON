@@ -14,13 +14,9 @@ A empresa "TEG" visa colaborar com desenvolvimento de cardápio digital e a auto
  
 
 ### 3.MINI-MUNDO<br>
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
+O sistema proposto envolve a chegada do cliente, no qual terá um cadastro que será associado a comanda responsável pelos pedidos. O cadastro de cliente deverá armazenar o nome e seu cpf, onde o cliente pode ter uma ou várias comandas, mas a comanda está relacionada com um, e somente um, cliente. Para conciliar o cliente à mesa, é necessário a leitura de um QR Code que estará disponível exclusivamente um por mesa e que conterá o número da comanda previamente organizado pela equipe, sem repetição. A comanda armazenará o número da mesa e a data do atendimento, onde a comanda estará associada com nenhum ou vários pedidos, entretanto o pedido estará relacionado com uma, e somente uma, comanda. Quando o cliente acessar o QR Code e fizer o seu registro, ele poderá visualizar o cardápio do restaurante e o espaço que conterá o resumo dos seus pedidos realizados nesse atendimento. Os pedidos só poderão ser alterados pelos funcionários do salão e com tempo máximo para cancelamento, já os funcionários da cozinha apenas visualizarão os pedidos no sistema. O funcionário do salão será identificado por nome e matrícula, e podem atender nenhuma ou várias comandas, entretanto a comanda só poderá ser atendida por um, e somente um, funcionário. Cada pedido para ser enviado ao preparo deverá estar atrelado a comanda e armazenar a quantidade de itens e hora da solicitação, podendo ter ou não uma observação, onde essa só possui sua descrição. Uma observação estará associada a um, e somente um, pedido. Os itens de cardápio que serão pedidos devem armazenar o nome, descrição, preço, tamanho e categoria. Todo item de cardápio possui um, e somente um, tamanho e categoria, no qual ambos armazenarão apenas suas respectivas descrições e poderão estar relacionados a nenhum ou vários itens de cardápio. O item de cardápio poderá estar associado a nenhum ou vários pedidos, mas um pedido estará associado a apenas um, e somente um, item de cardápio. Por fim, as telas serão diferentes entre os funcionários e os clientes, e o sistema não oferecerá pagamento, portanto, após todo o atendimento o cliente solicitará um funcionário para tal atividade e quando a comanda for paga em seu total, o funcionário encerrará no sistema.
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
@@ -119,8 +115,8 @@ DESCRIÇÃO: campo que armazena a descrição de cada categoria do item de card�
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e seus resultados](https://colab.research.google.com/drive/1Vu8ftDCmYrtNi09dPQycjWn5mkIkNe_Z?usp=sharing "Consultas simples")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
