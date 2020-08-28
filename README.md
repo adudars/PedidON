@@ -48,7 +48,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![Modelo Conceitual](https://github.com/adudars/PedidON/blob/master/images/5_Modelo%20Conceitual.png)
     
     
 #### 5.1 Validação do Modelo Conceitual
@@ -99,6 +99,8 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
         a) inclusão do esquema lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
+        
+  ![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico.png)
 
 
 ### 7	MODELO FÍSICO<br>
