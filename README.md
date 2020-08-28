@@ -116,7 +116,7 @@ DESCRIÇÃO: campo que armazena a descrição de cada categoria do item de card�
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/9_1_ConsultasTabelas.ipynb)
+![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/9.1_ConsultasSimplesTabelas.ipynb)
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
