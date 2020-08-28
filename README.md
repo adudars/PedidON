@@ -88,7 +88,7 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
 
 
 ### 6	MODELO LÓGICO<br>
-  ![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico.png "6 Modelo lógico")
+  ![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico%20(1).png)
 
 
 ### 7	MODELO FÍSICO<br>
