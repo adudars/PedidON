@@ -86,19 +86,34 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
 
 
 ### 6	MODELO LÓGICO<br>
-  ![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico%20(1).png)
+![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico%20(1).png)
 
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
-  ![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql)
-        
-        
-       
+![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql)
+```
+CREATE TABLE CLIENTE (
+    id_Cliente SERIAL PRIMARY KEY,
+    nome_Cliente VARCHAR(40),
+    cpf_Cliente INTEGER
+);
+
+```
+  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 ![Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_Insert.sql)
- 
+```
+drop table observacao;
+drop table pedido;
+drop table item_cardapio;
+drop table categoria;
+drop table tamanho;
+drop table comanda;
+drop table cliente;
+drop table funcionario;
+
+```
+
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
@@ -168,12 +183,11 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
     https://help.github.com/articles/about-writing-and-formatting-on-github/
     
 ##### Basic Formatting in Git
-    
     https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
-    
     
 ##### Working with advanced formatting
     https://help.github.com/articles/working-with-advanced-formatting/
+    
 #### Mastering Markdown
     https://guides.github.com/features/mastering-markdown/
 
