@@ -44,8 +44,8 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
     
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+Grupo 01: Kelvin Lehrback Guilherme
+Grupo 02: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
 **CLIENTE**: Tabela que armazena as informações relativas aos clientes <br>
