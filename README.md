@@ -32,9 +32,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
 * Relatório Gasto por clientes: mostrar os nomes e o valor total gasto de cada cliente no mês. Os resultados devem estar ordenados pelo valor total gasto de forma decrescente.
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
-    a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
-    b) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    
+
 ![Tabela de dados do PedidON](https://github.com/adudars/PedidON/blob/master/arquivos/4.3_Tabela%20de%20dados%20do%20sistema.xlsx "Tabela - PedidON")
     
     
