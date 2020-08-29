@@ -95,7 +95,7 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-![Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_insert).png)
+![Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_%20Insert.sql)
  
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
