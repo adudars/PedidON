@@ -42,8 +42,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
     
     
 #### 5.1 Validação do Modelo Conceitual
-Grupo 01: Kelvin Lehrback Guilherme<br>
-	Foi avaliado que mudássemos a disposição das entidades, para seguir o padrão de ordem de leitura, de cima para baixo e da esquerda para a direita.<br>
+Grupo 01: Kelvin Lehrback Guilherme - Foi avaliado que mudássemos a disposição das entidades, para seguir o padrão de ordem de leitura, de cima para baixo e da esquerda para a direita.<br>
 Grupo 02: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
