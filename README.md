@@ -92,6 +92,8 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
+  ![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql)
+        
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
