@@ -349,47 +349,47 @@ values('Sem sal', 1),
     ```
     select nome_cliente
     from cliente
-    where nome_cliente like '_a__'
+    where nome_cliente like '_a__';
     
     select *
     from cliente
-    where nome_cliente ilike '%a%'
+    where nome_cliente ilike '%a%';
     
     select nome_funcionario
     from funcionario
-    where nome_funcionario ilike '%O'
+    where nome_funcionario ilike '%O';
     
     select *
     from item_cardapio
-    where nome_item like 'B%'
+    where nome_item like 'B%';
     
     select *
     from item_cardapio
-    where nome_item ilike '__________'
+    where nome_item ilike '__________';
     ```
     
 ##### 9.4.2	CONSULTAS QUE USAM DATA
     ```
     select mesa
     from comanda
-    where data >= '2020-07-31'
+    where data >= '2020-07-31';
     
     select data as data_pedidos, current_date as data_de_hoje, age(current_date,data) as dias_corridos_ate_hoje
     from comanda
     group by data_pedidos
-    order by data_pedidos asc
+    order by data_pedidos asc;
     
     select data as data_pedidos, date_part('month',data) as mes
     from comanda
-    group by data_pedidos
+    group by data_pedidos;
     
     select isfinite(data) as datas_finita
     from comanda
-    group by datas_finita
+    group by datas_finita;
     
     select data as data_pedidos, extract('year' from data) as ano
     from comanda
-    group by data_pedidos
+    group by data_pedidos;
     
     select nome_cliente, concat(data, ' ' ,hora) as data_hora_pedido
     from comanda as c
@@ -397,13 +397,13 @@ values('Sem sal', 1),
     (p.fk_id_comanda = c.id_comanda)
     inner join cliente as cl on
     (cl.id_cliente = c.fk_id_cliente)
-    order by data_hora_pedido asc
+    order by data_hora_pedido asc;
     
     select data as data_pedido, hora
     from comanda as c
     inner join pedido as p on
     (p.fk_id_comanda = c.id_comanda)
-    where hora >= '13:00:00' and data = '2020-07-31'
+    where hora >= '13:00:00' and data = '2020-07-31';
     ```
     
 
@@ -428,7 +428,7 @@ values('Sem sal', 1),
    inner join funcionario as f on
    (f.id_funcionario = c.fk_id_funcionario)
    group by id_comanda, nome_cliente, nome_funcionario
-   order by id_comanda
+   order by id_comanda;
    
    select id_comanda, max(preco) as preço_max
    from item_cardapio as ic
@@ -437,13 +437,13 @@ values('Sem sal', 1),
    inner join comanda as c on
    (c.id_comanda = p.fk_id_comanda)
    group by id_comanda
-   order by id_comanda
+   order by id_comanda;
    
    select nome_cliente, count(id_comanda) as quantidade_comandas
    from comanda as c
    inner join cliente as cl on
    (cl.id_cliente = c.fk_id_cliente)
-   group by nome_cliente
+   group by nome_cliente;
    
    select id_comanda, sum(preco) as valor_total
    from comanda as c
@@ -452,7 +452,7 @@ values('Sem sal', 1),
    inner join item_cardapio as ic on
    (p.fk_id_itemcardapio = ic.id_itemcardapio)
    group by id_comanda
-   order by valor_total desc
+   order by valor_total desc;
    
    select nome_funcionario, count(nome_funcionario) as comandas_atendidas
    from comanda as c
@@ -460,7 +460,7 @@ values('Sem sal', 1),
    (c.id_comanda = p.fk_id_comanda)
    inner join funcionario as f on
    (c.fk_id_funcionario = f.id_funcionario)
-   group by nome_funcionario
+   group by nome_funcionario;
    
    select id_comanda, nome_item, min(preco) as menor_valor_pedido
    from comanda as c
@@ -469,7 +469,7 @@ values('Sem sal', 1),
    inner join item_cardapio as ic on
    (p.fk_id_itemcardapio = ic.id_itemcardapio)
    group by id_comanda, nome_item
-   order by menor_valor_pedido asc
+   order by menor_valor_pedido asc;
    ```
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
