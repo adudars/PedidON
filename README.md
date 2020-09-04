@@ -345,6 +345,7 @@ values('Sem sal', 1),
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
+![Consultas com like/ilike e datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_Consultas_Like&Data.sql "9.4 Consultas com like/ilike e datas")
 ##### 9.4.1	CONSULTAS QUE USAM OPERADORES LIKE
     ```
     select nome_cliente
@@ -416,6 +417,7 @@ values('Sem sal', 1),
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+![Consultas com group by e funções de agrupamento](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_Consultas_GroupBy&Agrupamento.sql "9.4 Consultas com group by e funções de agrupamento")
    ```
    select id_comanda, nome_cliente, nome_funcionario, avg(preco) as media_preco
    from comanda as c
