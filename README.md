@@ -417,8 +417,18 @@ values('Sem sal', 1),
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
    ```
-   select avg(preco) as media_preco_cardapio
-   from item_cardapio
+   select id_comanda, nome_cliente, nome_funcionario, avg(preco) as media_preco
+   from comanda as c
+   inner join pedido as p on
+   (c.id_comanda = p.fk_id_comanda)
+   inner join item_cardapio as ic on
+   (p.fk_id_itemcardapio = ic.id_itemcardapio)
+   inner join cliente as cl on
+   (cl.id_cliente = c.fk_id_cliente)
+   inner join funcionario as f on
+   (f.id_funcionario = c.fk_id_funcionario)
+   group by id_comanda, nome_cliente, nome_funcionario
+   order by id_comanda
    
    select id_comanda, max(preco) as preço_max
    from item_cardapio as ic
