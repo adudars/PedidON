@@ -38,7 +38,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
     
 ### 5.MODELO CONCEITUAL<br>
 
-![Modelo Conceitual](https://github.com/adudars/PedidON/blob/master/images/5_Modelo%20Conceitual.png "5 Modelo conceitual")
+![Modelo Conceitual](https://github.com/adudars/PedidON/blob/master/images/5_Modelo%20Conceitual.png "5 Modelo Conceitual")
     
     
 #### 5.1 Validação do Modelo Conceitual
@@ -88,11 +88,11 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
 
 
 ### 6	MODELO LÓGICO<br>
-![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico%20(1).png)
+![Modelo Lógico](https://github.com/adudars/PedidON/blob/master/images/6_Modelo%20Logico%20(1).png "6 Modelo lógico")
 
 
 ### 7	MODELO FÍSICO<br>
-![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql)
+![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql "7 Modelo Físico")
 ```
 CREATE TABLE CLIENTE (
 	id_Cliente SERIAL PRIMARY KEY,
@@ -339,11 +339,15 @@ values('Sem sal', 1),
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+```
+```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
-
+ ```
+ ```
+ 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
 ![Consultas com like/ilike e datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_Consultas_Like&Data.sql "9.4 Consultas com like/ilike e datas")
 ##### 9.4.1	CONSULTAS QUE USAM OPERADORES LIKE
@@ -411,10 +415,14 @@ where hora >= '13:00:00' and data = '2020-07-31';
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
+```
+```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+```
+```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 ![Consultas com group by e funções de agrupamento](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_Consultas_GroupBy&Agrupamento.sql "9.4 Consultas com group by e funções de agrupamento")
@@ -476,14 +484,20 @@ order by menor_valor_pedido asc;
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
+```
+```
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+```
+```
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
+```
+```
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
