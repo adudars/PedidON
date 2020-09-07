@@ -339,7 +339,15 @@ values('Sem sal', 1),
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+![Consultas Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_Consultas_Where.sql)
 ```
+select * from comanda where fk_id_funcionario=1;
+
+select id_comanda from comanda where mesa=1;
+
+select nome_cliente from cliente where id_cliente=10;
+
+select * from item_cardapio where preco<50;
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
