@@ -351,9 +351,6 @@ select * from item_cardapio where preco<50;
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 ![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_Consulta_Operadores.sql)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
  ```
 select * from comanda where mesa=13 and fk_id_funcionario =1;
 select * from pedido where hora>'13:00' and fk_id_itemcardapio=2;
