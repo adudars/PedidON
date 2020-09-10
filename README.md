@@ -438,6 +438,7 @@ where hora >= '13:00:00' and data = '2020-07-31';
 ```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
+![Consultas com Inner Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_Consultas_Inner_Join.sql)
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 ```
