@@ -339,7 +339,7 @@ values('Sem sal', 1),
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![Consultas Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_Consultas_Where.sql)
+![Consultas com Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_Consultas_Where.sql)
 ```
 select *
 from comanda
@@ -401,7 +401,7 @@ from comanda;
  ```
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-![Consultas com like/ilike e datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_Consultas_Like&Data.sql "9.4 Consultas com like/ilike e datas")
+![Consultas com Like/Ilike e Datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_Consultas_Like&Data.sql "9.4 Consultas com like/ilike e datas")
 ##### 9.4.1	CONSULTAS QUE USAM OPERADORES LIKE
 ```
 select nome_cliente
@@ -471,7 +471,7 @@ where hora >= '13:00:00' and data = '2020-07-31';
 ```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-![Consultas com Inner Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_Consultas_Inner_Join.sql)
+![Consultas com Inner Join e Order By](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_Consultas_Inner_Join.sql)
 ```
 select *
 from observacao
@@ -516,7 +516,7 @@ inner join funcionario on funcionario.id_funcionario = comanda.fk_id_funcionario
 ```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-![Consultas com group by e funções de agrupamento](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_Consultas_GroupBy&Agrupamento.sql "9.4 Consultas com group by e funções de agrupamento")
+![Consultas com Group By e funções de Agrupamento](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_Consultas_GroupBy&Agrupamento.sql "9.4 Consultas com group by e funções de agrupamento")
 ```
 select id_comanda, nome_cliente, nome_funcionario, avg(preco) as media_preco
 from comanda as c
