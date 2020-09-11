@@ -341,30 +341,63 @@ values('Sem sal', 1),
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 ![Consultas Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_Consultas_Where.sql)
 ```
-select * from comanda where fk_id_funcionario=1;
+select *
+from comanda
+where fk_id_funcionario=1;
 
-select id_comanda from comanda where mesa=1;
+select id_comanda
+from comanda
+where mesa=1;
 
-select nome_cliente from cliente where id_cliente=10;
+select nome_cliente
+from cliente
+where id_cliente=10;
 
-select * from item_cardapio where preco<50;
+select *
+from item_cardapio
+where preco<50;
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 ![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_Consulta_Operadores.sql)
  ```
-select * from comanda where mesa=13 and fk_id_funcionario =1;
-select * from pedido where hora>'13:00' and fk_id_itemcardapio=2;
-select cpf_cliente from cliente where id_cliente=1 or id_cliente=2;
-select * from cliente where not id_cliente=1;
-select fk_id_funcionario from comanda where data='2020-07-30' or (not mesa=1 and not fk_id_cliente=2);
+select *
+from comanda
+where mesa=13 and fk_id_funcionario =1;
 
-select preco*2 from item_cardapio;
-select quantidade+1 from pedido where id_pedido=1;
-select preco/2 from item_cardapio;
+select *
+from pedido
+where hora>'13:00' and fk_id_itemcardapio=2;
 
-select preco as valor from item_cardapio;
-select nome_item as item from item_cardapio;
-select id_comanda as comanda from comanda;
+select cpf_cliente
+from cliente
+where id_cliente=1 or id_cliente=2;
+
+select *
+from cliente
+where not id_cliente=1;
+
+select fk_id_funcionario
+from comanda
+where data='2020-07-30' or (not mesa=1 and not fk_id_cliente=2);
+
+select preco*2
+from item_cardapio;
+
+select quantidade+1
+from pedido
+where id_pedido=1;
+
+select preco/2
+from item_cardapio;
+
+select preco as valor
+from item_cardapio;
+
+select nome_item as item
+from item_cardapio;
+
+select id_comanda as comanda
+from comanda;
  ```
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
@@ -439,27 +472,45 @@ where hora >= '13:00:00' and data = '2020-07-31';
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
 ![Consultas com Inner Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_Consultas_Inner_Join.sql)
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 ```
-select * from observacao
-inner join pedido on observacao.fk_id_pedido = pedido.id_pedido 
-inner join comanda on pedido.fk_id_comanda = comanda.id_comanda
-inner join item_cardapio on pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio
-inner join cliente on comanda.fk_id_cliente = cliente.id_cliente 
-inner join funcionario on comanda.fk_id_funcionario = funcionario.id_funcionario
-inner join tamanho on item_cardapio.fk_id_tamanho = tamanho.id_tamanho
-inner join categoria on item_cardapio.fk_id_categoria = categoria.id_categoria;
+select *
+from observacao
+inner join pedido on
+observacao.fk_id_pedido = pedido.id_pedido 
+inner join comanda on
+pedido.fk_id_comanda = comanda.id_comanda
+inner join item_cardapio on
+pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio
+inner join cliente on
+comanda.fk_id_cliente = cliente.id_cliente 
+inner join funcionario on
+comanda.fk_id_funcionario = funcionario.id_funcionario
+inner join tamanho on
+item_cardapio.fk_id_tamanho = tamanho.id_tamanho
+inner join categoria on
+item_cardapio.fk_id_categoria = categoria.id_categoria;
 
-select * from observacao inner join pedido on observacao.fk_id_pedido = pedido.id_pedido;
+select *
+from observacao
+inner join pedido on
+observacao.fk_id_pedido = pedido.id_pedido;
 
-select * from pedido inner join item_cardapio on pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio;
+select *
+from pedido
+inner join item_cardapio on
+pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio;
 
-select nome_funcionario,id_comanda,mesa from comanda inner join funcionario on comanda.fk_id_funcionario = funcionario.id_funcionario;
+select nome_funcionario, id_comanda, mesa
+from comanda
+inner join funcionario on
+comanda.fk_id_funcionario = funcionario.id_funcionario;
 
-select nome_cliente, id_comanda,mesa from comanda inner join cliente on comanda.fk_id_cliente = cliente.id_cliente;
+select nome_cliente, id_comanda, mesa
+from comanda
+inner join cliente on comanda.fk_id_cliente = cliente.id_cliente;
 
-select nome_cliente, nome_funcionario from cliente 
+select nome_cliente, nome_funcionario
+from cliente 
 inner join comanda on cliente.id_cliente = comanda.fk_id_cliente 
 inner join funcionario on funcionario.id_funcionario = comanda.fk_id_funcionario;
 ```
