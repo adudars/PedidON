@@ -462,7 +462,7 @@ select data as data_pedido, hora
 from comanda as c
 inner join pedido as p on
 (p.fk_id_comanda = c.id_comanda)
-where hora >= '13:00:00' and data = '2020-07-31';
+where hora <= current_time and data <= current_date;
 ```
     
 
