@@ -427,9 +427,11 @@ where nome_item ilike '__________';
     
 ##### 9.4.2	CONSULTAS QUE USAM DATA
 ```
-select mesa
+select mesa, count(mesa) as vezes_usada_para_atendimento
 from comanda
-where data >= '2020-07-31';
+where data <= current_date
+group by mesa
+order by vezes_usada_para_atendimento desc;
 
 select data as data_pedidos, current_date as data_de_hoje, age(current_date,data) as dias_corridos_ate_hoje
 from comanda
