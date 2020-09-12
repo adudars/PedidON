@@ -351,16 +351,31 @@ values('Sem sal', 1),
     
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
-```
-update funcionario set nome_funcionario='Ronaldo' where id_funcionario=1;
-update pedido set quantidade=3 where id_pedido=1;
-update item_cardapio set preco=60 where nome_item='Reta da Penha';
+![Atualização e Exclusão de Dados](https://github.com/adudars/PedidON/blob/master/arquivos/9.5_InstrucoesAtualizacao%26ExclusaoDados.ipynb)
 
-delete from pedido where id_pedido=1;
-delete from pedido where id_pedido=3;
-delete from observacao where fk_id_pedido=12;
+```
+update funcionario
+set nome_funcionario = 'Matheus Henrique', matricula_funcionario = 5200302
+where id_funcionario = 2;
+
+update tamanho
+set descricao = 'individual'
+where descricao = '1 pessoa';
+
+upadte item_cardapio
+set preco = preco * 1.1
+where preco = (select min(preco) from item_Cardapio);
+
+delete from tamanho
+where descricao = 'infantil';
+
+delete from observacao
+where descricao = 'Porção extra de arroz';
+
+delete from pedido
+where id_pedido = 14;
+
+
 ```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
