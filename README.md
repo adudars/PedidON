@@ -401,8 +401,8 @@ from comanda;
  ```
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-![Consultas com Like/Ilike e Datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_Consultas_Like&Data.sql "9.4 Consultas com like/ilike e datas")
-##### 9.4.1	CONSULTAS QUE USAM OPERADORES LIKE
+![Consultas com Like/Ilike e Datas](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_ConsultasOperadoresLikeIlike&Datas.ipynb "9.4 Consultas com like/ilike e datas")
+##### 9.4.1	CONSULTAS QUE USAM OPERADORES LIKE/ILIKE
 ```
 select nome_cliente
 from cliente
@@ -425,7 +425,7 @@ from item_cardapio
 where nome_item ilike '__________';
 ```
     
-##### 9.4.2	CONSULTAS QUE USAM DATA
+##### 9.4.2	CONSULTAS QUE USAM DATAS
 ```
 select mesa, count(mesa) as vezes_usada_para_atendimento
 from comanda
