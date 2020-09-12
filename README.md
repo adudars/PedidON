@@ -500,12 +500,14 @@ observacao.fk_id_pedido = pedido.id_pedido;
 select *
 from pedido
 inner join item_cardapio on
-pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio;
+pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio
+order by hora;
 
 select nome_funcionario, id_comanda, mesa
 from comanda
 inner join funcionario on
-comanda.fk_id_funcionario = funcionario.id_funcionario;
+comanda.fk_id_funcionario = funcionario.id_funcionario
+order by nome_funcionario;
 
 select nome_cliente, id_comanda, mesa
 from comanda
@@ -514,7 +516,10 @@ inner join cliente on comanda.fk_id_cliente = cliente.id_cliente;
 select nome_cliente, nome_funcionario
 from cliente 
 inner join comanda on cliente.id_cliente = comanda.fk_id_cliente 
-inner join funcionario on funcionario.id_funcionario = comanda.fk_id_funcionario;
+inner join funcionario on funcionario.id_funcionario = comanda.fk_id_funcionario
+order by nome_cliente;
+
+select nome_cliente from cliente order by nome_cliente;
 ```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
