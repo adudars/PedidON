@@ -334,71 +334,17 @@ values('Sem sal', 1),
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.1_ConsultasSimplesTabelas.ipynb)
+![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.1_ConsultasSimplesTabelas.ipynb "9.1 Consultas Simples")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![Consultas com Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb)
-```
-select *
-from comanda
-where fk_id_funcionario=1;
+![Consultas com Where realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb "9.2 Consultas com Where")
 
-select id_comanda
-from comanda
-where mesa=1;
 
-select nome_cliente
-from cliente
-where id_cliente=10;
-
-select *
-from item_cardapio
-where preco<50;
-```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos%26TabelasouCamposRenomeados.ipynb)
- ```
-select *
-from comanda
-where mesa=13 and fk_id_funcionario =1;
-
-select *
-from pedido
-where hora>'13:00' and fk_id_itemcardapio=2;
-
-select cpf_cliente
-from cliente
-where id_cliente=1 or id_cliente=2;
-
-select *
-from cliente
-where not id_cliente=1;
-
-select fk_id_funcionario
-from comanda
-where data='2020-07-30' or (not mesa=1 and not fk_id_cliente=2);
-
-select preco*2
-from item_cardapio;
-
-select quantidade+1
-from pedido
-where id_pedido=1;
-
-select preco/2
-from item_cardapio;
-
-select preco as valor
-from item_cardapio;
-
-select nome_item as item
-from item_cardapio;
-
-select id_comanda as comanda
-from comanda;
- ```
+![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos&TabelasouCamposRenomeados.ipynb "9.3 Consultas Operadores Logicos e Aritmeticos & Tabelas ou Campos Renomeados")
+ 
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
 ![Consultas com Like/Ilike e Datas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_ConsultasOperadoresLikeIlike&Datas.ipynb "9.4 Consultas com like/ilike e datas")
@@ -411,92 +357,24 @@ from comanda;
 ```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-![Consultas com Inner Join e Order By](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin%26OrderBy.ipynb)
-```
-select *
-from observacao
-inner join pedido on
-observacao.fk_id_pedido = pedido.id_pedido 
-inner join comanda on
-pedido.fk_id_comanda = comanda.id_comanda
-inner join item_cardapio on
-pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio
-inner join cliente on
-comanda.fk_id_cliente = cliente.id_cliente 
-inner join funcionario on
-comanda.fk_id_funcionario = funcionario.id_funcionario
-inner join tamanho on
-item_cardapio.fk_id_tamanho = tamanho.id_tamanho
-inner join categoria on
-item_cardapio.fk_id_categoria = categoria.id_categoria;
+![Consultas com Inner Join e Order By realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin&OrderBy.ipynb "9.6 Consultas Inner Join & Order By")
 
-select *
-from observacao
-inner join pedido on
-observacao.fk_id_pedido = pedido.id_pedido;
-
-select *
-from pedido
-inner join item_cardapio on
-pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio
-order by hora;
-
-select nome_funcionario, id_comanda, mesa
-from comanda
-inner join funcionario on
-comanda.fk_id_funcionario = funcionario.id_funcionario
-order by nome_funcionario;
-
-select nome_cliente, id_comanda, mesa
-from comanda
-inner join cliente on comanda.fk_id_cliente = cliente.id_cliente;
-
-select nome_cliente, nome_funcionario
-from cliente 
-inner join comanda on cliente.id_cliente = comanda.fk_id_cliente 
-inner join funcionario on funcionario.id_funcionario = comanda.fk_id_funcionario
-order by nome_cliente;
-
-select nome_cliente from cliente order by nome_cliente;
-```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-![Consultas com Group By e funções de Agrupamento realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com group by e funções de agrupamento")
+![Consultas com Group By e funções de Agrupamento realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com Group By e funções de Agrupamento")
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-![Consultas com Left, Right e Full Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft%26Right%26FullJoin.ipynb)
-```
-select * 
-from observacao 
-right outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
+![Consultas com Left, Right e Full Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft&Right&FullJoin.ipynb "9.8 Consultas com Left, Right & Full Join")
 
-select * 
-from observacao 
-left outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
-
-select * 
-from observacao 
-full outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
-
-select * 
-from pedido 
-right outer join item_cardapio on pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio 
-order by hora;
-
-```
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-```
-```
+![Consultas com Self Join e View](https://github.com/adudars/PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin&View.ipynb "9.9 Consultas com Self Join & View")
+
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
-```
-```
+![Subconsultas](https://github.com/adudars/PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb "9.10 Subconsultas")
+
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
