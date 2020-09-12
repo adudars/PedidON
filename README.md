@@ -465,18 +465,22 @@ select nome_cliente from cliente order by nome_cliente;
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-![Consultas com Left, Right e Full Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeftRightFullJoin.sql)
+![Consultas com Left, Right e Full Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft%26Right%26FullJoin.ipynb)
 ```
-select * from observacao 
+select * 
+from observacao 
 right outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
 
-select * from observacao 
+select * 
+from observacao 
 left outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
 
-select * from observacao 
+select * 
+from observacao 
 full outer join pedido on observacao.fk_id_pedido = pedido.id_pedido;
 
-select * from pedido 
+select * 
+from pedido 
 right outer join item_cardapio on pedido.fk_id_itemcardapio = item_cardapio.id_itemcardapio 
 order by hora;
 
