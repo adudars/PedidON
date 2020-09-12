@@ -461,7 +461,7 @@ select nome_cliente from cliente order by nome_cliente;
 ```
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-![Consultas com Group By e funções de Agrupamento](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com group by e funções de agrupamento")
+![Consultas com Group By e funções de Agrupamento realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com group by e funções de agrupamento")
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
