@@ -358,7 +358,7 @@ from item_cardapio
 where preco<50;
 ```
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_Consulta_Operadores.sql)
+![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos%26TabelasouCamposRenomeados.ipynb)
  ```
 select *
 from comanda
