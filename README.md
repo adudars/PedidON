@@ -411,7 +411,7 @@ from comanda;
 ```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-![Consultas com Inner Join e Order By](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_Consultas_Inner_Join.sql)
+![Consultas com Inner Join e Order By](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin%26OrderBy.ipynb)
 ```
 select *
 from observacao
