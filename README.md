@@ -365,15 +365,15 @@ values('Sem sal', 1),
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-![Consultas com Left, Right e Full Join](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft&Right&FullJoin.ipynb "9.8 Consultas com Left, Right & Full Join")
+![Consultas com Left, Right e Full Join realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft&Right&FullJoin.ipynb "9.8 Consultas com Left, Right & Full Join")
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-![Consultas com Self Join e View](https://github.com/adudars/PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin&View.ipynb "9.9 Consultas com Self Join & View")
+![Consultas com Self Join e View realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin&View.ipynb "9.9 Consultas com Self Join & View")
 
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-![Subconsultas](https://github.com/adudars/PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb "9.10 Subconsultas")
+![Subconsultas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb "9.10 Subconsultas")
 
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
