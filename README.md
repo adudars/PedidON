@@ -20,8 +20,8 @@ O sistema proposto envolve a chegada do cliente, no qual terá um cadastro que s
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do cliente](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Cliente.pdf?raw=true "empresa 'TEG'")<br>
-![Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do funcionário](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Funcionario.pdf?raw=true "empresa 'TEG'")
+[Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do cliente](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Cliente.pdf?raw=true "empresa 'TEG'")<br>
+[Arquivo PDF do Protótipo Balsamiq feito para o restaurante praiano: versão do funcionário](https://github.com/adudars/PedidON/blob/master/arquivos/Prototipo_Funcionario.pdf?raw=true "empresa 'TEG'")
 
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 O restaurante em questão precisa inicialmente dos seguintes relatórios:
@@ -33,7 +33,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
 
-![Tabela de dados do PedidON](https://github.com/adudars/PedidON/blob/master/arquivos/4.3_Tabela%20de%20dados%20do%20sistema.xlsx "Tabela - PedidON")
+[Tabela de dados do PedidON](https://github.com/adudars/PedidON/blob/master/arquivos/4.3_Tabela%20de%20dados%20do%20sistema.xlsx "Tabela - PedidON")
     
     
 ### 5.MODELO CONCEITUAL<br>
@@ -160,7 +160,7 @@ FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio);
 ```
   
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-![Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_Insert.sql)
+[Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_Insert.sql)
 ```
 drop table observacao;
 drop table pedido;
@@ -334,68 +334,44 @@ values('Sem sal', 1),
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-![Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.1_ConsultasSimplesTabelas.ipynb "9.1 Consultas Simples")
+[Consultas simples realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.1_ConsultasSimplesTabelas.ipynb "9.1 Consultas Simples")
 
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![Consultas com Where realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb "9.2 Consultas com Where")
+[Consultas com Where realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb "9.2 Consultas com Where")
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-![Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos&TabelasouCamposRenomeados.ipynb "9.3 Consultas Operadores Logicos e Aritmeticos & Tabelas ou Campos Renomeados")
+[Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos&TabelasouCamposRenomeados.ipynb "9.3 Consultas Operadores Logicos e Aritmeticos & Tabelas ou Campos Renomeados")
  
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-![Consultas com Like/Ilike e Datas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_ConsultasOperadoresLikeIlike&Datas.ipynb "9.4 Consultas com like/ilike e datas")
+[Consultas com Like/Ilike e Datas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.4_ConsultasOperadoresLikeIlike&Datas.ipynb "9.4 Consultas com like/ilike e datas")
     
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-![Atualização e Exclusão de Dados](https://github.com/adudars/PedidON/blob/master/arquivos/9.5_InstrucoesAtualizacao%26ExclusaoDados.ipynb)
+[Instruções aplicando atualização e exclusão de dados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.5_InstrucoesAtualizacao&ExclusaoDados.ipynb "9.5 Instrucoes Atualizacao & Exclusao Dados")
 
-```
-update funcionario
-set nome_funcionario = 'Matheus Henrique', matricula_funcionario = 5200302
-where id_funcionario = 2;
-
-update tamanho
-set descricao = 'individual'
-where descricao = '1 pessoa';
-
-upadte item_cardapio
-set preco = preco * 1.1
-where preco = (select min(preco) from item_Cardapio);
-
-delete from tamanho
-where descricao = 'infantil';
-
-delete from observacao
-where descricao = 'Porção extra de arroz';
-
-delete from pedido
-where id_pedido = 14;
-
-
-```
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-![Consultas com Inner Join e Order By realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin&OrderBy.ipynb "9.6 Consultas Inner Join & Order By")
+[Consultas com Inner Join e Order By realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin&OrderBy.ipynb "9.6 Consultas Inner Join & Order By")
 
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-![Consultas com Group By e funções de Agrupamento realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com Group By e funções de Agrupamento")
+[Consultas com Group By e funções de Agrupamento realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.7_ConsultasGroupBy&FuncoesAgrupamento.ipynb "9.7 Consultas com Group By e funções de Agrupamento")
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-![Consultas com Left, Right e Full Join realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft&Right&FullJoin.ipynb "9.8 Consultas com Left, Right & Full Join")
+[Consultas com Left, Right e Full Join realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft&Right&FullJoin.ipynb "9.8 Consultas com Left, Right & Full Join")
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-![Consultas com Self Join e View realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin&View.ipynb "9.9 Consultas com Self Join & View")
+[Consultas com Self Join e View realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin&View.ipynb "9.9 Consultas com Self Join & View")
 
 
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-![Subconsultas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb "9.10 Subconsultas")
+[Subconsultas realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb "9.10 Subconsultas")
 
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
