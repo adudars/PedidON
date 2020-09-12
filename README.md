@@ -339,7 +339,7 @@ values('Sem sal', 1),
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![Consultas com Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_Consultas_Where.sql)
+![Consultas com Where](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb)
 ```
 select *
 from comanda
