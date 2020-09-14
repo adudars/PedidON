@@ -28,7 +28,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
 * Relatório Funcionário destaque: mostrar o nome e a quantidade de comandas atendidas pelo funcionário que mais realizou atendimentos no mês.
 * Relatório Frequência de clientes: mostrar o nome e a frequência do cliente no mês. Os resultados devem ser apresentados ordenados pelo valor referente a frequência de forma decrescente.
 * Relatório Cardápio Top 3: mostrar o nome e valor dos itens de cardápio mais pedidos no mês. Os resultados devem ser apresentados ordenados pelo valor do item de cardápio de forma decrescente e limitado com apenas 3 linhas de consulta.
-* Relatório Faturamento mensal: mostrar o valor total faturado no mês.
+* Relatório Faturamento diário: mostrar o valor total faturado no dia.
 * Relatório Gasto por clientes: mostrar os nomes e o valor total gasto de cada cliente no mês. Os resultados devem estar ordenados pelo valor total gasto de forma decrescente.
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
