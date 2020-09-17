@@ -31,7 +31,7 @@ CREATE TABLE COMANDA (
 
 CREATE TABLE TAMANHO (
 	id_Tamanho SERIAL PRIMARY KEY,
-	descricao VARCHAR(30)
+	descricao_tamanho VARCHAR(30)
 );
 
 CREATE TABLE CATEGORIA (
@@ -50,7 +50,7 @@ CREATE TABLE PEDIDO (
 
 CREATE TABLE OBSERVACAO (
 	id_Obs SERIAL PRIMARY KEY,
-	descricao VARCHAR(140),
+	descricao_obs VARCHAR(140),
 	fk_id_Pedido INTEGER,
 	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
 );
@@ -59,7 +59,7 @@ CREATE TABLE ITEM_CARDAPIO (
 	id_ItemCardapio SERIAL PRIMARY KEY,
 	nome_Item VARCHAR(80),
 	preco FLOAT,
-	descricao VARCHAR(200),
+	descricao_item VARCHAR(200),
 	fk_id_Categoria INTEGER,
 	fk_id_Tamanho INTEGER,
 	FOREIGN KEY (fk_id_Categoria) REFERENCES CATEGORIA(id_Categoria),
@@ -101,7 +101,7 @@ values(13,'2020-07-30', 1, 1),
 (12, '2020-08-01', 9, 3),
 (13, '2020-08-01', 10, 2);
 
-insert into tamanho(descricao)
+insert into tamanho(descricao_tamanho)
 values('2 pessoas'),
 ('1 pessoa'),
 ('infantil'),
@@ -114,17 +114,17 @@ values('entrada'),
 ('principal'),
 ('sobremesa');
 
-insert into item_cardapio(nome_item, descricao, preco, fk_id_categoria, fk_id_tamanho)
-values('Reta da Penha', 'FilÈ Mignon marinado na mostarda antiga, servido com p„es da casa.', 56.90, 1, 2),
-('Rua Sete', 'FilÈ Mignon ao conhaque, servido com p„es da casa', 55, 1, 2),
-('Parque Moscoso', 'Polvo ‡ galega - Polvo cozido servido com sal e azeite, acompanhado de batatas e legumes tostados', 145, 3, 1),
-('Convento da Penha', 'Peixe do dia servido inteiro e assado com lim„o siciliano, ervas e alcaparras, acompanhado de massa na manteiga de lim„o',115, 3, 1),
-('Ilha de SocÛ', 'Chocolate em mousse fria e semi congelada com pralinÈ de nozes', 22, 4, 2),
-('Bons ventos te trazem', 'Gin, reduÁ„o de flor de sabugueiro, maracuj·, mix cÌtricos, espuma de gengibre e angostura bitter', 25.9, 2, 2),
-('Barlavento', 'Gin, xarope de morango, maracuj·, suco de laranja, espuma de gengibre e angostura bitter', 25.9, 2, 2),
+insert into item_cardapio(nome_item, descricao_item, preco, fk_id_categoria, fk_id_tamanho)
+values('Reta da Penha', 'Fil√© Mignon marinado na mostarda antiga, servido com p√£es da casa.', 56.90, 1, 2),
+('Rua Sete', 'Fil√© Mignon ao conhaque, servido com p√£es da casa', 55, 1, 2),
+('Parque Moscoso', 'Polvo √† galega - Polvo cozido servido com sal e azeite, acompanhado de batatas e legumes tostados', 145, 3, 1),
+('Convento da Penha', 'Peixe do dia servido inteiro e assado com lim√£o siciliano, ervas e alcaparras, acompanhado de massa na manteiga de lim√£o',115, 3, 1),
+('Ilha de Soc√≥', 'Chocolate em mousse fria e semi congelada com pralin√© de nozes', 22, 4, 2),
+('Bons ventos te trazem', 'Gin, redu√ß√£o de flor de sabugueiro, maracuj√°, mix c√≠tricos, espuma de gengibre e angostura bitter', 25.9, 2, 2),
+('Barlavento', 'Gin, xarope de morango, maracuj√°, suco de laranja, espuma de gengibre e angostura bitter', 25.9, 2, 2),
 ('Stella Artois', 'Stella Artois Long Neck', 5.99, 2, 4),
 ('Pepsi', 'Refrigerante', 6.9, 2, 5),
-('Cidade Sol', 'Whiskey Jack Daniels, maracuj·, mix de cÌtricos, xarope de hibisco, tomilho e licor 43.', 29.9, 2, 2);
+('Cidade Sol', 'Whiskey Jack Daniels, maracuj√°, mix de c√≠tricos, xarope de hibisco, tomilho e licor 43.', 29.9, 2, 2);
 
 insert into pedido(quantidade,hora,fk_id_comanda,fk_id_itemcardapio)
 values(2, '12:58:00',1, 1),
@@ -153,14 +153,14 @@ values(2, '12:58:00',1, 1),
 (2, '14:23:00', 13, 5),
 (1, '14:29:00', 13,6);
 
-insert into observacao(descricao, fk_id_pedido)
+insert into observacao(descricao_obs, fk_id_pedido)
 values('Sem sal', 1),
 ('Um prato e talher extra', 4),
 ('Sem nozes', 5),
 ('Sem espuma', 7),
-('Dois copos com gelo e lim„o', 9),
-('Sem os p„es da casa', 12),
-('Sem maracuj·', 10),
+('Dois copos com gelo e lim√£o', 9),
+('Sem os p√£es da casa', 12),
+('Sem maracuj√°', 10),
 ('Servir no copo', 8),
-('PorÁ„o extra de arroz', 14),
+('Por√ß√£o extra de arroz', 14),
 ('Adicionar pimenta', 11);
