@@ -22,7 +22,7 @@ CREATE TABLE COMANDA (
 
 CREATE TABLE TAMANHO (
     id_Tamanho SERIAL PRIMARY KEY,
-    descricao VARCHAR(30)
+    descricao_tamanho VARCHAR(30)
 );
 
 CREATE TABLE CATEGORIA (
@@ -41,7 +41,7 @@ CREATE TABLE PEDIDO (
 
 CREATE TABLE OBSERVACAO (
     id_Obs SERIAL PRIMARY KEY,
-    descricao VARCHAR(140),
+    descricao_obs VARCHAR(140),
     fk_id_Pedido INTEGER,
     FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
 );
@@ -50,7 +50,7 @@ CREATE TABLE ITEM_CARDAPIO (
     id_ItemCardapio SERIAL PRIMARY KEY,
     nome_Item VARCHAR(80),
     preco FLOAT,
-    descricao VARCHAR(200),
+    descricao_item VARCHAR(200),
     fk_id_Categoria INTEGER,
     fk_id_Tamanho INTEGER,
     FOREIGN KEY (fk_id_Categoria) REFERENCES CATEGORIA(id_Categoria),
