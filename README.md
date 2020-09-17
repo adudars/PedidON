@@ -118,7 +118,7 @@ CREATE TABLE COMANDA (
 
 CREATE TABLE TAMANHO (
 	id_Tamanho SERIAL PRIMARY KEY,
-	descricao VARCHAR(30)
+	descricao_tamanho VARCHAR(30)
 );
 
 CREATE TABLE CATEGORIA (
@@ -137,7 +137,7 @@ CREATE TABLE PEDIDO (
 
 CREATE TABLE OBSERVACAO (
 	id_Obs SERIAL PRIMARY KEY,
-	descricao VARCHAR(140),
+	descricao_obs VARCHAR(140),
 	fk_id_Pedido INTEGER,
 	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
 );
@@ -146,7 +146,7 @@ CREATE TABLE ITEM_CARDAPIO (
 	id_ItemCardapio SERIAL PRIMARY KEY,
 	nome_Item VARCHAR(80),
 	preco FLOAT,
-	descricao VARCHAR(200),
+	descricao_item VARCHAR(200),
 	fk_id_Categoria INTEGER,
 	fk_id_Tamanho INTEGER,
 	FOREIGN KEY (fk_id_Categoria) REFERENCES CATEGORIA(id_Categoria),
@@ -195,7 +195,7 @@ CREATE TABLE COMANDA (
 
 CREATE TABLE TAMANHO (
 	id_Tamanho SERIAL PRIMARY KEY,
-	descricao VARCHAR(30)
+	descricao_tamanho VARCHAR(30)
 );
 
 CREATE TABLE CATEGORIA (
@@ -214,7 +214,7 @@ CREATE TABLE PEDIDO (
 
 CREATE TABLE OBSERVACAO (
 	id_Obs SERIAL PRIMARY KEY,
-	descricao VARCHAR(140),
+	descricao_obs VARCHAR(140),
 	fk_id_Pedido INTEGER,
 	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
 );
@@ -223,7 +223,7 @@ CREATE TABLE ITEM_CARDAPIO (
 	id_ItemCardapio SERIAL PRIMARY KEY,
 	nome_Item VARCHAR(80),
 	preco FLOAT,
-	descricao VARCHAR(200),
+	descricao_item VARCHAR(200),
 	fk_id_Categoria INTEGER,
 	fk_id_Tamanho INTEGER,
 	FOREIGN KEY (fk_id_Categoria) REFERENCES CATEGORIA(id_Categoria),
@@ -265,7 +265,7 @@ values(13,'2020-07-30', 1, 1),
 (12, '2020-08-01', 9, 3),
 (13, '2020-08-01', 10, 2);
 
-insert into tamanho(descricao)
+insert into tamanho(descricao_tamanho)
 values('2 pessoas'),
 ('1 pessoa'),
 ('infantil'),
@@ -278,7 +278,7 @@ values('entrada'),
 ('principal'),
 ('sobremesa');
 
-insert into item_cardapio(nome_item, descricao, preco, fk_id_categoria, fk_id_tamanho)
+insert into item_cardapio(nome_item, descricao_item, preco, fk_id_categoria, fk_id_tamanho)
 values('Reta da Penha', 'Filé Mignon marinado na mostarda antiga, servido com pães da casa.', 56.90, 1, 2),
 ('Rua Sete', 'Filé Mignon ao conhaque, servido com pães da casa', 55, 1, 2),
 ('Parque Moscoso', 'Polvo à galega - Polvo cozido servido com sal e azeite, acompanhado de batatas e legumes tostados', 145, 3, 1),
@@ -317,7 +317,7 @@ values(2, '12:58:00',1, 1),
 (2, '14:23:00', 13, 5),
 (1, '14:29:00', 13,6);
 
-insert into observacao(descricao, fk_id_pedido)
+insert into observacao(descricao_obs, fk_id_pedido)
 values('Sem sal', 1),
 ('Um prato e talher extra', 4),
 ('Sem nozes', 5),
