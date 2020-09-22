@@ -33,7 +33,7 @@ O restaurante em questão precisa inicialmente dos seguintes relatórios:
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de dados do PedidON](https://github.com/adudars/PedidON/blob/master/arquivos/4.3_Tabela%20de%20dados%20do%20sistema.xlsx "Tabela - PedidON")
+[Tabela de dados do PedidON](https://github.com/adudars/PedidON/blob/master/arquivos/4.3_TabelaDeDadosDoSistema.xlsx "Tabela - PedidON")
     
     
 ### 5.MODELO CONCEITUAL<br>
