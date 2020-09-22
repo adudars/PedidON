@@ -584,7 +584,7 @@ values('Sem sal', 1),
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
-[Relatório e gráficos realizados no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/10.Relatórios_e_gráficos.ipynb "10 Relatório e gráficos")
+[Relatórios e gráficos realizados no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/10.Relatórios_e_gráficos.ipynb "10 Relatórios e gráficos")
 
     
 
