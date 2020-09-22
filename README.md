@@ -427,7 +427,7 @@ values('Sem sal', 1),
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-[Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos&TabelasouCamposRenomeados.ipynb "9.3 Consultas Operadores Logicos e Aritmeticos & Tabelas ou Campos Renomeados")
+[Consultas Operadores Lógico, Aritméticos e tabelas ou campos renomeados realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos%26TabelasouCamposRenomeados.ipynb "9.3 Consultas Operadores Logicos e Aritmeticos & Tabelas ou Campos Renomeados")
  
  
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
