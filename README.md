@@ -439,7 +439,7 @@ values('Sem sal', 1),
 
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-[Consultas com Inner Join e Order By realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin&OrderBy.ipynb "9.6 Consultas Inner Join & Order By")
+[Consultas com Inner Join e Order By realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin%26OrderBy.ipynb "9.6 Consultas Inner Join & Order By")
 
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
