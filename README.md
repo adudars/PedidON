@@ -423,7 +423,7 @@ values('Sem sal', 1),
 ># Marco de Entrega 01: Do item 1 até o item 9.1<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-[Consultas com Where realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb "9.2 Consultas com Where")
+[Consultas com Where realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb)
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
