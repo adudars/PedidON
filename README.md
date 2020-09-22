@@ -584,10 +584,7 @@ values('Sem sal', 1),
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
-
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
+[Relatório e gráficos realizados no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/10.Relatórios_e_gráficos.ipynb "10 Relatório e gráficos")
 
     
 
