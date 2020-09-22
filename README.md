@@ -447,7 +447,7 @@ values('Sem sal', 1),
 
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-[Consultas com Left, Right e Full Join realizadas no Google Colaboratory com suas respectivas instruções e resultados]()
+[Consultas com Left, Right e Full Join realizadas no Google Colaboratory com suas respectivas instruções e resultados](https://github.com/adudars/PedidON/blob/master/arquivos/9.8_ConsultasLeft%26Right%26FullJoin.ipynb)
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
