@@ -589,7 +589,7 @@ values('Sem sal', 1),
     
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
-[Slides modelo Pecha Kucha](https://github.com/adudars/PedidON/blob/master/arquivos/11.Slides_ModeloPechaKucha.pdf")
+[Slides modelo Pecha Kucha](https://github.com/adudars/PedidON/blob/master/arquivos/11.Slides_ModeloPechaKucha.pdf "Slides modelo Pecha Kucha")
 
 ># Marco de Entrega 03: Itens 10 e 11<br>
 <br>
