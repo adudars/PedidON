@@ -92,7 +92,7 @@ DESCRICAO_CATEGORIA: campo que armazena a descrição de cada categoria do item 
 
 
 ### 7	MODELO FÍSICO<br>
-![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7_Modelo%20fisico.sql "7 Modelo Físico")
+![Modelo Físico](https://github.com/adudars/PedidON/blob/master/arquivos/7.Modelo%20fisico.sql "7 Modelo Físico")
 ```
 CREATE TABLE CLIENTE (
 	id_Cliente SERIAL PRIMARY KEY,
@@ -160,7 +160,7 @@ FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio);
 ```
   
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-[Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8_Insert.sql)
+[Insert nas tabelas](https://github.com/adudars/PedidON/blob/master/arquivos/8.Insert.sql)
 ```
 drop table observacao;
 drop table pedido;
