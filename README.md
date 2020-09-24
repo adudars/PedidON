@@ -126,22 +126,6 @@ CREATE TABLE CATEGORIA (
 	nome_Categoria VARCHAR(40)
 );
 
-CREATE TABLE PEDIDO (
-	id_Pedido SERIAL PRIMARY KEY,
-	quantidade INTEGER,
-	hora TIME,
-	fk_id_Comanda INTEGER,
-	fk_id_ItemCardapio INTEGER,
-	FOREIGN KEY (fk_id_Comanda) REFERENCES COMANDA(id_Comanda)
-);
-
-CREATE TABLE OBSERVACAO (
-	id_Obs SERIAL PRIMARY KEY,
-	descricao_obs VARCHAR(140),
-	fk_id_Pedido INTEGER,
-	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
-);
-
 CREATE TABLE ITEM_CARDAPIO (
 	id_ItemCardapio SERIAL PRIMARY KEY,
 	nome_Item VARCHAR(80),
@@ -153,9 +137,22 @@ CREATE TABLE ITEM_CARDAPIO (
 	FOREIGN KEY (fk_id_Tamanho) REFERENCES TAMANHO(id_Tamanho)
 );
 
-ALTER TABLE PEDIDO ADD
-FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio);
+CREATE TABLE PEDIDO (
+	id_Pedido SERIAL PRIMARY KEY,
+	quantidade INTEGER,
+	hora TIME,
+	fk_id_Comanda INTEGER,
+	fk_id_ItemCardapio INTEGER,
+	FOREIGN KEY (fk_id_Comanda) REFERENCES COMANDA(id_Comanda),
+	FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio)
+);
 
+CREATE TABLE OBSERVACAO (
+	id_Obs SERIAL PRIMARY KEY,
+	descricao_obs VARCHAR(140),
+	fk_id_Pedido INTEGER,
+	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
+);
 
 ```
   
@@ -203,22 +200,6 @@ CREATE TABLE CATEGORIA (
 	nome_Categoria VARCHAR(40)
 );
 
-CREATE TABLE PEDIDO (
-	id_Pedido SERIAL PRIMARY KEY,
-	quantidade INTEGER,
-	hora TIME,
-	fk_id_Comanda INTEGER,
-	fk_id_ItemCardapio INTEGER,
-	FOREIGN KEY (fk_id_Comanda) REFERENCES COMANDA(id_Comanda)
-);
-
-CREATE TABLE OBSERVACAO (
-	id_Obs SERIAL PRIMARY KEY,
-	descricao_obs VARCHAR(140),
-	fk_id_Pedido INTEGER,
-	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
-);
-
 CREATE TABLE ITEM_CARDAPIO (
 	id_ItemCardapio SERIAL PRIMARY KEY,
 	nome_Item VARCHAR(80),
@@ -230,8 +211,22 @@ CREATE TABLE ITEM_CARDAPIO (
 	FOREIGN KEY (fk_id_Tamanho) REFERENCES TAMANHO(id_Tamanho)
 );
 
-ALTER TABLE PEDIDO ADD
-FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio);
+CREATE TABLE PEDIDO (
+	id_Pedido SERIAL PRIMARY KEY,
+	quantidade INTEGER,
+	hora TIME,
+	fk_id_Comanda INTEGER,
+	fk_id_ItemCardapio INTEGER,
+	FOREIGN KEY (fk_id_Comanda) REFERENCES COMANDA(id_Comanda),
+	FOREIGN KEY (fk_id_ItemCardapio) REFERENCES ITEM_CARDAPIO(id_ItemCardapio)	
+);
+
+CREATE TABLE OBSERVACAO (
+	id_Obs SERIAL PRIMARY KEY,
+	descricao_obs VARCHAR(140),
+	fk_id_Pedido INTEGER,
+	FOREIGN KEY (fk_id_Pedido) REFERENCES PEDIDO(id_Pedido)
+);
 
 insert into cliente(nome_cliente, cpf_cliente)
 values('Lara', 10582),
