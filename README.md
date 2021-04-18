@@ -18,6 +18,25 @@ Este projeto tem o objetivo de desenvolver uma sistema que visa colaborar com de
 - [Versão Cliente](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/Prototipo_Cliente.pdf)
 - [Versão Funcionário](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/Prototipo_Funcionario.pdf)
 
+### 🗂 Modelos
+- [Conceitual](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/images/5_Modelo%20Conceitual.png)
+- [Lógico](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/images/6_Modelo%20Logico%20(1).png)
+- [Físico](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/7.Modelo%20fisico.sql)
+
+### 🔎 Consultas
+- [Subconsultas](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.10_Subconsultas.ipynb)
+- [Where](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.2_ConsultasWhere.ipynb)
+- [Operadores Logicos e Aritmeticos](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.3_ConsultasOperadoresLogicoseAritmeticos%26TabelasouCamposRenomeados.ipynb)
+- [Operadores Like/Ilike](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.4_ConsultasOperadoresLikeIlike%26Datas.ipynb)
+- [Atualizacao](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.5_InstrucoesAtualizacao%26ExclusaoDados.ipynb)
+- [InnerJoin](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.6_ConsultasInnerJoin%26OrderBy.ipynb)
+- [Group By](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.7_ConsultasGroupBy%26FuncoesAgrupamento.ipynb)
+- [Left/Right/Full Join](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.8_ConsultasLeft%26Right%26FullJoin.ipynb)
+- [Self join e View](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/9.9_ConsultasSelfJoin%26View.ipynb)
+
+### 📊 Relatórios
+- [Gráficos](https://github.com/eduardarsimoes/BD1_PedidON/blob/master/arquivos/10.Relat%C3%B3rios%26Gr%C3%A1ficos.ipynb)
+
 ## 👪 Colaboradores<br>
 <table>
   <tr>
